@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Password Generator</title>
+  <link rel="icon" type="image/x-icon" href="icon.png">
+  <!-- add bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <!-- link icons from google fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <style>
+    body {width: 500px;
+          height: 600px;}
+  </style>
+</head>
+<body class="card">
+  <div class="card-body">
+    <h1>Password Generator</h1>
+    <div class="input-container">
+      <p class="my-4">Password Length:</p>
+      <form class="form-outline my-4">
+        <div class="row">
+          <div class="col">
+            <input type="range" class="form-range" id="password_length" name="amountRange" min="8" max="32" value="21" step="1" />
+          </div>
+          <div class="col">
+            <input type="number" class="form-number border border-primary rounded" id="password_range" name="amountInput" min="8" max="32" value="21" />
+          </div>
+        </div>
+      </form>
+      <ul class="list-group">
+        <li class="list-group-item">
+          <input type="checkbox" class="form-check-input" id="option_uppercase" checked/>   Uppercase
+        </li>
+        <li class="list-group-item">
+          <input type="checkbox" class="form-check-input" id="option_lowercase" checked/>   Lowercase
+        </li>
+        <li class="list-group-item">
+          <input type="checkbox" class="form-check-input" id="option_numbers" checked/>   Numbers
+        </li>
+        <li class="list-group-item">
+          <input type="checkbox" class="form-check-input" id="option_symbols" checked/>   Symbols
+        </li>
+      </ul>
+    </div>
+    <div class="card-body">
+      <ul class="list-inline my-4">
+        <li class="list-inline-item">
+          <button id="generate-button" class="btn btn-outline-primary btn-lg">Generate</button>
+        </li>
+        <li class="list-inline-item">
+          <button id="regenerate" class="btn btn-outline-primary">
+            <span class="material-symbols-outlined">
+              sync
+            </span></button>
+        </li>
+        <li class="list-inline-item">     
+          <button id="copy" class="btn btn-outline-primary">
+            <span class="material-symbols-outlined">
+            content_copy
+            </span>
+          </button>
+
+        </li>
+      </ul>
+      
+      <input type="text" name="pw-display" id="result" class="form-control-lg border border-primary w-100" disabled>
+      <script src="generate_pw.js"></script>
+    
+    </div>
+  </div>
+</body>
+</html>

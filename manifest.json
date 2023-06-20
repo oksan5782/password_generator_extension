@@ -1,0 +1,14 @@
+{
+    "manifest_version": 3,
+    "version": "1.0",
+    "name": "Password Generator",
+    "description": "Generates secure password with set length and symbols",
+    "icons": {
+      "16": "icon.png"
+    },
+    "action": {
+      "default_popup": "index.html",
+      "default_icon": "icon.png"
+    }
+  }
+  
