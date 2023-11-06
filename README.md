@@ -1,6 +1,6 @@
 # Password Generator 
 
-The Password Generator is a browser extension that allows you to generate strong and secure passwords directly in your browser. It provides a convenient way to create passwords of varying lengths and character sets.
+The Password Generator is a browser extension that allows you to generate strong and secure passwords directly in your browser. It provides a convenient way to create passwords of varying lengths and character sets. Extension is made for Google Chrome with JavaScript and HTML. 
 
 ## Features
 
@@ -10,6 +10,11 @@ The Password Generator is a browser extension that allows you to generate strong
 - Simple and intuitive user interface.
 - Uses [Crypto.getRandomValues](https://developer.mozilla.org/en-US/docs/Web/API/Crypto/getRandomValues) method to generate cryptographically strong random values for a password.
 
+## Libraries/Frameworks Used 
+
+1. [Web Crypto API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Crypto_API).  [Crypto.getRandomValues()](https://developer.mozilla.org/en-US/docs/Web/API/Crypto/getRandomValues) method is used to generate random values for a password.
+2. [Bootstrap](https://getbootstrap.com/). The extension's style is build using only Bootstrap. 
+   
 ## Installation
 
 1. Download the extension files from the repository or the provided source.
@@ -27,4 +32,5 @@ The Password Generator is a browser extension that allows you to generate strong
 5. The generated password will be displayed on the screen.
 6. If you do not like the result, click "Regenerate" icon.
 7. Click the "Copy" icon to copy the password to your clipboard.
+<img width="496" alt="Screenshot 2023-11-06 at 13 52 15" src="https://github.com/oksan5782/password_generator_extension/assets/57775793/05ad938f-8337-4677-adc1-7b3c2c3a69ae">
 
